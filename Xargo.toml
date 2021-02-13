@@ -1,2 +1,12 @@
-[target.bpfel-unknown-unknown.dependencies.std]
-features = []
+[package]
+name = "solana-escrow"
+version = "0.1.0"
+edition = "2018"
+license = "WTFPL"
+publish = false
+
+[dependencies]
+solana-program = "1.5.7"
+
+[lib]
+crate-type = ["cdylib", "lib"]
